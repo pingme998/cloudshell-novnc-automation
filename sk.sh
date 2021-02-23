@@ -13,6 +13,6 @@ rm -r *
 wget 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip'
 #unzipping ngrok-stable-linux-amd64.zip in selected folder
 unzip ngrok-stable-linux-amd64.zip
-#echo -n "AuthToken"
-./ngrok authtoken {AuthToken} 
+echo -n "AuthToken"
+./ngrok authtoken $AuthToken
 ./ngrok http 8080
